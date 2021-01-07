@@ -13,24 +13,32 @@
 // 3. Se volete, sviluppate tutto nello stesso file html + js, o dividete in cartelle differenti. Insomma, fate come ve pare
 // ---------------------------------------------------------------------------------
 
-var flag = true;
-// Creazione di una funzione che verifichi se la parola inserita è palindroma o no
-function isPalindrome() {
-  var word = prompt('Inserisci una parola');
-  // console.log(word);
-  // Creazione di un Array che ha per item le singole lettere componenti la parola inserita dall'utente
-  var charWordArray = word.split('');
-  // console.log(charWordArray);
-  for ( var i = 0; i < charWordArray.length; i++) {
-    if (charWordArray[i] !== charWordArray[-i + charWordArray.length - 1]) {
-      flag = false;
-    }
-  }
-  if (flag === false) {
-    alert('La parola inserita non è palindroma');
-  } else {
-    alert('La parola è palindroma');
-  }
-}
+// Es.1 OK
 
-isPalindrome();
+// var flag = true;
+// // Creazione di una funzione che verifichi se la parola inserita è palindroma o no
+// function isPalindrome() {
+//   var word = prompt('Inserisci una parola');
+//   // console.log(word);
+//   // Creazione di un Array che ha per item le singole lettere componenti la parola inserita dall'utente
+//   var charWordArray = word.split('');
+//   // console.log(charWordArray);
+//   for ( var i = 0; i < charWordArray.length; i++) {
+//     if (charWordArray[i] !== charWordArray[-i + charWordArray.length - 1]) {
+//       flag = false;
+//     }
+//   }
+//   if (flag === false) {
+//     alert('La parola inserita non è palindroma');
+//   } else {
+//     alert('La parola è palindroma');
+//   }
+// }
+//
+// isPalindrome();
+
+// -------------------------------------------------------------------------------------
+
+
+var evenAndOdd = prompt('Il risultato finale di questo test sarà pari o dispari ?');
+console.log(evenAndOdd);
