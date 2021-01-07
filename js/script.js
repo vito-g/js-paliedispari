@@ -43,20 +43,21 @@
 
 var evenAndOdd = prompt('Il risultato finale di questo test sarà pari o dispari ?');
 console.log('Hai pronosticato un numero: ' + evenAndOdd);
-var number = parseInt(prompt('inserisci un numero da 1 a 5'));
-console.log('Hai inserito il numero: ' + number);
-
 
 if (!(evenAndOdd)) {
   alert('devi rispondere alla domanda');
 } else {
   // alert('Ok passiamo alla prossima richiesta');
+  var number = parseInt(prompt('inserisci un numero da 1 a 5'));
+  console.log('Hai inserito il numero: ' + number);
   if ((number > 0) && (number <= 5)) {
     alert('grazie');
   } else {
     alert('Devi inserire un numero da 1 a 5')
   }
 }
+
+
 
 function numberRandom(a, b) {
     var random = Math.floor((Math.random() * b) + a);
