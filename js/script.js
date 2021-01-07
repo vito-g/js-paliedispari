@@ -46,12 +46,19 @@ var number = parseInt(prompt('inserisci un numero da 1 a 5'));
 console.log(number);
 
 
-// if (!(number > 0)) {
+if (!(evenAndOdd)) {
+  alert('devi rispondere alla domanda');
+} else {
+  alert('Ok passiamo alla prossima richiesta');
+}
+if ((number > 0) && (number <= 5)) {
+  alert('grazie');
+}
+
+
+// if (!(number > 0) && !(number > 0)) {
 //   alert('Ho detto che devi inserire un numero da 0 a 5');
 // }
-if (!(number > 0) && !(number > 0)) {
-  alert('Ho detto che devi inserire un numero da 0 a 5');
-}
 
 
 
