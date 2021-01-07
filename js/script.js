@@ -13,7 +13,7 @@
 // 3. Se volete, sviluppate tutto nello stesso file html + js, o dividete in cartelle differenti. Insomma, fate come ve pare
 // ---------------------------------------------------------------------------------
 
-// Es.1 OK
+// Es.1 OK:
 
 // var flag = true;
 // // Creazione di una funzione che verifichi se la parola inserita è palindroma o no
@@ -39,6 +39,7 @@
 
 // -------------------------------------------------------------------------------------
 
+// ES.2 OK:
 
 var evenAndOdd = prompt('Il risultato finale di questo test sarà pari o dispari ?');
 console.log('Hai pronosticato un numero: ' + evenAndOdd);
@@ -57,15 +58,13 @@ if (!(evenAndOdd)) {
   }
 }
 
-
-
 function numberRandom(a, b) {
     var random = Math.floor((Math.random() * b) + a);
     return random;
 }
 
-var numberPc = numberRandom(1, 5);
-console.log('IL numero randomico calcolato per il pc è: ' + numberPc);
+var numberPc = numberRandom(1, 5); // Function Call
+console.log('Il numero randomico calcolato per il pc è: ' + numberPc);
 
 var somma = number + numberPc;
 console.log('La somma dei due numeri è: ' + somma);
@@ -73,35 +72,5 @@ console.log('La somma dei due numeri è: ' + somma);
 if ((somma % 2 === 0) && (evenAndOdd === 'pari')) {
   alert('Il risultato è: pari. Hai vinto');
 } else {
-  alert('Il risultato è: dispari. Hai perso');
+  alert(' Hai perso');
 }
-
-
-
-
-
-//Andiamo con ordine: Chiediamo un pronostico sul risultato finale del test
- // function richiestaUno() {
- //   var evenAndOdd = prompt('Il risultato finale di questo test sarà pari o dispari?');
- //   //SE mettessi fuori dalla function il mio IF, lo script non funzionerebbe, forse perchè la var evenAndOdd è dichiarata localmente nella funzione
- //   if (evenAndOdd) {
- //     alert('Bravo, passiamo alla seconda richiesta!');
- //     richiestaDue(); //Istruzione per richiamare la seconda funzione
- //   } else {
- //     alert('Rispondi alla domanda!');
- //     richiestaUno();
- //   }
- // }
- // console.log(evenAndOdd);
- //
- // function richiestaDue() {
- //   var number = prompt('Inserisci un numero da 1 a 5');
- //   if (!number) {
- //     alert('Ho detto che devi inserire, pure, un numero da 1 a 5');
- //     richiestaDue();
- //   } else {
- //     alert('Grazie! Ho tutti i dati che mi occorrono');
- //   }
- // }
- //
- // richiestaUno(); //Istruzione per richiamare la prima funzione
