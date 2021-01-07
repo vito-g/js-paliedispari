@@ -21,9 +21,16 @@ function isPalindrome() {
   // Creazione di un Array che ha per item le singole lettere componenti la parola inserita dall'utente
   var charWordArray = word.split('');
   // console.log(charWordArray);
-  for ( var i = 0; i < charWordArray.lenght; i++) {
-    if (charWordArray[i] !== charWordArray[-i + charWordArray.length -1]) {
-      var flag = false;
+  for ( var i = 0; i < charWordArray.length; i++) {
+    if (charWordArray[i] !== charWordArray[-i + charWordArray.length - 1]) {
+      flag = false;
     }
   }
+  if (flag === false) {
+    alert('La parola inserita non è palindroma');
+  } else {
+    alert('La parola è palindroma');
+  }
 }
+
+isPalindrome();
