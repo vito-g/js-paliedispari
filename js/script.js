@@ -15,3 +15,7 @@
 
 var word = prompt('Inserisci una parola');
 console.log(word);
+
+// Creazione di un Array che ha per item le singole lettere componenti la parola inserita dall'utente
+var charWordArray = word.split('');
+console.log(charWordArray)
