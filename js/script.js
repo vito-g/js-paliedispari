@@ -44,3 +44,8 @@ var evenAndOdd = prompt('Il risultato finale di questo test sarà pari o dispari
 console.log(evenAndOdd);
 var number = parseInt(prompt('inserisci un numero da 1 a 5'));
 console.log(number);
+
+
+if (!(number)) {
+  alert('Ho detto che devi inserire un numero da 0 a 5');
+} 
