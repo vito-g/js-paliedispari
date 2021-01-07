@@ -41,9 +41,9 @@
 
 
 var evenAndOdd = prompt('Il risultato finale di questo test sarà pari o dispari ?');
-console.log(evenAndOdd);
+console.log('Hai pronosticato un numero: ' + evenAndOdd);
 var number = parseInt(prompt('inserisci un numero da 1 a 5'));
-console.log(number);
+console.log('Hai inserito il numero: ' + number);
 
 
 if (!(evenAndOdd)) {
@@ -65,10 +65,16 @@ function numberRandom(a, b) {
 }
 
 var numberPc = numberRandom(1, 5);
-console.log(numberPc);
+console.log('IL numero randomico calcolato per il pc è: ' + numberPc);
 
 var somma = number + numberPc;
-console.log(somma);
+console.log('La somma dei due numeri è: ' + somma);
+
+if ((somma % 2 === 0) && (evenAndOdd === 'pari')) {
+  alert('Il risultato è: pari. Hai vinto');
+} else {
+  alert('Il risultato è: dispari. Hai perso');
+}
 
 
 
