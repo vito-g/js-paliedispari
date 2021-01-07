@@ -44,6 +44,12 @@
 var evenAndOdd = prompt('Il risultato finale di questo test sarà pari o dispari ?');
 console.log('Hai pronosticato un numero: ' + evenAndOdd);
 
+//La funzione seguente calcola un numero randomico
+function numberRandom(a, b) {
+    var random = Math.floor((Math.random() * b) + a);
+    return random;
+}
+
 if (!(evenAndOdd)) {
   alert('devi rispondere alla domanda');
 } else {
@@ -52,26 +58,17 @@ if (!(evenAndOdd)) {
   console.log('Hai inserito il numero: ' + number);
   if ((number > 0) && (number <= 5)) {
     alert('grazie');
+    var numberPc = numberRandom(1, 5); // Function Call
+    console.log('Il numero randomico calcolato per il pc è: ' + numberPc);
+
+    var somma = number + numberPc;
+    console.log('La somma dei due numeri è: ' + somma);
+    if (((somma % 2 === 0) && (evenAndOdd === 'pari')) || ((somma % 2 !== 0) && (evenAndOdd === 'dispari'))) {
+      alert('Hai vinto');
+    } else  {
+      alert(' Hai perso');
+    }
   } else {
     alert('Devi inserire un numero da 1 a 5')
   }
-}
-
-
-
-function numberRandom(a, b) {
-    var random = Math.floor((Math.random() * b) + a);
-    return random;
-}
-
-var numberPc = numberRandom(1, 5); // Function Call
-console.log('Il numero randomico calcolato per il pc è: ' + numberPc);
-
-var somma = number + numberPc;
-console.log('La somma dei due numeri è: ' + somma);
-
-if (((somma % 2 === 0) && (evenAndOdd === 'pari')) || ((somma % 2 !== 0) && (evenAndOdd === 'dispari'))) {
-  alert('Hai vinto');
-} else  {
-  alert(' Hai perso');
 }
