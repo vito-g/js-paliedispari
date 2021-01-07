@@ -40,40 +40,44 @@
 // -------------------------------------------------------------------------------------
 
 
-// var evenAndOdd = prompt('Il risultato finale di questo test sarà pari o dispari ?');
-// console.log(evenAndOdd);
-// var number = parseInt(prompt('inserisci un numero da 1 a 5'));
-// console.log(number);
-//
-//
-// if (!(number)) {
+var evenAndOdd = prompt('Il risultato finale di questo test sarà pari o dispari ?');
+console.log(evenAndOdd);
+var number = parseInt(prompt('inserisci un numero da 1 a 5'));
+console.log(number);
+
+
+// if (!(number > 0)) {
 //   alert('Ho detto che devi inserire un numero da 0 a 5');
 // }
+if (!(number > 0) && !(number > 0)) {
+  alert('Ho detto che devi inserire un numero da 0 a 5');
+}
 
 
 
 
 //Andiamo con ordine: Chiediamo un pronostico sul risultato finale del test
- function richiestaUno() {
-   var evenAndOdd = prompt('Il risultato finale di questo test sarà pari o dispari?');
-   //SE mettessi fuori dalla function il mio IF, lo script non funzionerebbe, forse perchè la var evenAndOdd è dichiarata localmente nella funzione
-   if (evenAndOdd) {
-     alert('Bravo, passiamo alla seconda richiesta!');
-     richiestaDue(); //Istruzione per richiamare la seconda funzione
-   } else {
-     alert('Rispondi alla domanda!');
-     richiestaUno();
-   }
- }
-
- function richiestaDue() {
-   var number = prompt('Inserisci un numero da 1 a 5');
-   if (!number) {
-     alert('Ho detto che devi inserire, pure, un numero da 1 a 5');
-     richiestaDue();
-   } else {
-     alert('Grazie! Ho tutti i dati che mi occorrono');
-   }
- }
-
- richiestaUno(); //Istruzione per richiamare la prima funzione
+ // function richiestaUno() {
+ //   var evenAndOdd = prompt('Il risultato finale di questo test sarà pari o dispari?');
+ //   //SE mettessi fuori dalla function il mio IF, lo script non funzionerebbe, forse perchè la var evenAndOdd è dichiarata localmente nella funzione
+ //   if (evenAndOdd) {
+ //     alert('Bravo, passiamo alla seconda richiesta!');
+ //     richiestaDue(); //Istruzione per richiamare la seconda funzione
+ //   } else {
+ //     alert('Rispondi alla domanda!');
+ //     richiestaUno();
+ //   }
+ // }
+ // console.log(evenAndOdd);
+ //
+ // function richiestaDue() {
+ //   var number = prompt('Inserisci un numero da 1 a 5');
+ //   if (!number) {
+ //     alert('Ho detto che devi inserire, pure, un numero da 1 a 5');
+ //     richiestaDue();
+ //   } else {
+ //     alert('Grazie! Ho tutti i dati che mi occorrono');
+ //   }
+ // }
+ //
+ // richiestaUno(); //Istruzione per richiamare la prima funzione
