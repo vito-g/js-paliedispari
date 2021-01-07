@@ -69,8 +69,8 @@ console.log('Il numero randomico calcolato per il pc è: ' + numberPc);
 var somma = number + numberPc;
 console.log('La somma dei due numeri è: ' + somma);
 
-if ((somma % 2 === 0) && (evenAndOdd === 'pari')) {
-  alert('Il risultato è: pari. Hai vinto');
-} else {
+if (((somma % 2 === 0) && (evenAndOdd === 'pari')) || ((somma % 2 !== 0) && (evenAndOdd === 'dispari'))) {
+  alert('Hai vinto');
+} else  {
   alert(' Hai perso');
 }
