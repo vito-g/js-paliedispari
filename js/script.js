@@ -12,3 +12,6 @@
 // 2. Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
 // 3. Se volete, sviluppate tutto nello stesso file html + js, o dividete in cartelle differenti. Insomma, fate come ve pare
 // ---------------------------------------------------------------------------------
+
+var word = prompt('Inserisci una parola');
+console.log(word);
