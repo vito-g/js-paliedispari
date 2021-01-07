@@ -56,7 +56,7 @@ if ((number > 0) && (number <= 5)) {
 }
 
 
-// if (!(number > 0) && !(number > 0)) {
+// if (!(number > 0) && !(number <= 5)) {
 //   alert('Ho detto che devi inserire un numero da 0 a 5');
 // }
 
