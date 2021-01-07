@@ -67,6 +67,9 @@ function numberRandom(a, b) {
 var numberPc = numberRandom(1, 5);
 console.log(numberPc);
 
+var somma = number + numberPc;
+console.log(somma);
+
 
 
 
