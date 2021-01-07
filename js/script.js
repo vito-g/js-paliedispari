@@ -49,16 +49,24 @@ console.log(number);
 if (!(evenAndOdd)) {
   alert('devi rispondere alla domanda');
 } else {
-  alert('Ok passiamo alla prossima richiesta');
-}
-if ((number > 0) && (number <= 5)) {
-  alert('grazie');
+  // alert('Ok passiamo alla prossima richiesta');
+  if ((number > 0) && (number <= 5)) {
+    alert('grazie');
+  } else {
+    alert('Devi inserire un numero da 1 a 5')
+  }
 }
 
 
-// if (!(number > 0) && !(number <= 5)) {
-//   alert('Ho detto che devi inserire un numero da 0 a 5');
-// }
+
+function numberRandom(a, b) {
+    var random = Math.floor((Math.random() * b) + a);
+    return random;
+}
+
+var numberPc = numberRandom(1, 5);
+console.log(numberPc);
+
 
 
 
